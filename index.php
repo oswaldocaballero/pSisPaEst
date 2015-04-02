@@ -52,22 +52,6 @@
 			<div id="btnIniciarSesion"><input id="a_ingresar" type="submit" value="Iniciar sesi&oacute;n"/></div>
 		</div>	
 
-		<!--<?php
-		//if(isset($_SESSION['activo'])){
-		?>-->
-			<!--<div><a id="mensajeSesion">sesion iniciada</a></div>-->
-		<!--<?php
-			//$menu2 = "menuLog";
-			//require("php/menu.php");
-		//}else{
-			//?>
-			<div><a id="mensajeSesion">sesion no iniciada</a></div>
-			//<?php
-			//$menu = "menu";
-			//require("php/menu.php");
-		//}
-		?>-->
-
 		<?php
 			$menu = "menu";
 			require("php/menu.php");
