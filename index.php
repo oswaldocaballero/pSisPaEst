@@ -85,7 +85,7 @@
 				</tr>
 				<tr>
 					<td id="contPromo"></td>
-	            </tr>
+	            		</tr>
 			</table>			
 		</div>
 
