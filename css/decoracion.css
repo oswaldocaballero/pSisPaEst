@@ -1,0 +1,74 @@
+div#esteticas{
+	position: absolute;
+	border: 2px solid rgb(22,107,152);
+	width: 34%;
+	height: 45%;
+	border-radius: 9px;
+	left: 32%;
+	top: 40%;
+}
+img.uno{
+	position: absolute;
+	left: 280px;
+	margin-left: -269px;
+	margin-top: 60px;
+	-webkit-transform:rotate(-5deg);
+	z-index: 2;
+}
+img.dos{
+	position: absolute;
+	top: 100px;
+	margin-left: 25px;
+	-webkit-transform:rotate(-10deg);
+	z-index: 3;
+}
+img.tres{
+	position: absolute;
+	top: 100px;
+	margin-left: 235px;
+	-webkit-transform:rotate(+10deg);
+	z-index: 3;
+}
+img.cuatro{
+	position: absolute;
+	top: 10px;
+	margin-left: 130px;
+	z-index: 1;
+}
+img.cinco{
+	position: absolute;
+	margin-top: 60px;
+    margin-left: 248px;
+	-webkit-transform:rotate(+5deg);
+	z-index: 2;
+}
+div#esteticas img{
+	width: 190px;
+	-webkit-transition: width .8s;
+	border:3px solid #FFFFFF;
+	opacity: 0.6;
+}
+div#esteticas img:hover{
+	width: 200px;
+	-webkit-transform:rotate(0deg);
+	z-index: 4;
+	opacity: 1;
+	border:3px solid rgb(22,107,152);
+
+}
+legend#letrero{
+	position: absolute;
+	text-align: center;
+	width: 90px;
+	height: 20px;
+	margin-top: 280px;
+	margin-left: 186px;
+	background-color: rgb(22,107,152);
+	border-radius: 3px;
+	color: #FFFFFF;
+}
+legend#letrero:hover{
+	background-color: rgb(255,255,255);
+	color: rgb(22,107,152);
+	-webkit-transition: .3s;
+}

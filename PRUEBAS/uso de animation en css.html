@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: initial;
+animation-fill-mode:forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   { left:0px; }
+    25%  {left:200px;}
+    50%  {left:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   { left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:0px; top:200px;}
+
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+</body>
+</html>

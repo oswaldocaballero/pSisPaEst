@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registro Estilista</title>	
+	</head>
+	<body>
+		<!--<div id="bienv">
+			<table>
+				<tr>
+					<td id="contTabla"><h3>REGISTRO DE ESTILISTA</h3></td>
+				</tr>
+			</table>
+		</div>-->
+
+		<div id="formulario">
+			<form action="../php/verificarRegistroEstilista.php" method="POST">
+				<fieldset align="center" id="personales">
+					<legend>Datos personales</legend>
+						<a id="user">usuario: <input type="text" id="tUser" name="usuario" title="Ingrese su usuario " autofocus onpaste="return false"/></a>
+						<div id="mensaje1" class="errores">Ingrese su usuario</div>
+						
+						<a id="nombre">Nombre: <input type="text" id="tNombre" name="nombre" title="Ingrese su nombre" autofocus onkeypress="return soloLetras(event);" onpaste="return false"/></a>
+						<div id="mensaje2" class="errores">Ingrese su nombre</div>
+						
+						<a id="ap">Apellido Paterno: <input type="text" id="tAp" name="ap" title="Ingrese su apellido paterno" autofocus onkeypress="return soloLetras(event);" onpaste="return false"/></a>
+						<div id="mensaje3" class="errores">Ingrese su Apellido Paterno</div>
+						
+						<a id="am">Apellido Materno: <input type="text" id="tAm" name="am" title="Ingrese su apellido materno" autofocus onkeypress="return soloLetras(event);" onpaste="return false"/></a>
+						<div id="mensaje4" class="errores">Ingrese su Apellido Materno</div>
+						
+						<a id="pass">Contrase&ntilde;a: <input type="password" id="tPass" name="contrasena" title="Ingrese su contrase&ntilde;a" autofocus onpaste="return false"/></a>
+						<div id="mensaje5" class="errores">Ingrese su contrase&ntilde;a</div>
+
+						<a id="telf">Telefono: <input type="tel" id="tTelf" name="telf" title="Ingrese su numero telefonico" autofocus onkeypress="return soloNumeros(event);" onpaste="return false" maxlength="10"/></a>
+						<div id="mensaje6" class="errores">Ingrese su telf</div>
+
+						<a id="e_mail">Email: <input type="text" id="tEmail" name="email" title="Ingrese su email" autofocus onpaste="return false"/></a>
+						<div id="mensaje7" class="errores">Ingrese su Email</div>
+						<div id="mensaje8" class="errores">Ingrese un Email valido</div>
+						
+						<a id="edad">Edad:
+						    <select id="tEdad" name="edad" autofocus required>
+						    	<option></option>
+						    	<option value="a" title="edad entre 18 a 55 a&ntilde;os">Adulto</option>
+						    	<option value="aM" title="edad entre 56 a 99 a&ntilde;os">Adulto Mayor</option>
+                            </select>
+						</a>
+
+						<a id="sx">Sexo:
+								<a id = "hmb"><input type="radio" id="gen" name="gen" value="m" autofocus required/>Masculino</a>
+								<a id = "mjr"><input type="radio" id="gen" name="gen" value="f" autofocus required/>Femenino</a>
+						</a>
+						
+						<a id="tp"><input type="hidden" id="tPuesto" name="puesto" value="estilista"/></a>
+				</fieldset>
+				
+				<fieldset align="center" id="direccion">
+					<legend>Direcci&oacute;n</legend>
+						<a id="direccion">Direcci&oacute;n: <input type="text" id="tDireccion" name="direccion" title="Ingrese su direccion" autofocus onpaste="return false"/></a>
+						<div id="mensaje11" class="errores">Ingrese la direccion de su domicilio</div>
+
+						<a id="colonia">Colonia: <input type="text" id="tColonia" name="colonia" autofocus onpaste="return false"/></a>
+						<div id="mensaje12" class="errores">Ingrese la colonia donde se ubica su domicilio</div>						
+				</fieldset>
+
+				<fieldset align="center" id="info">
+					<legend>Informaci&oacute;n</legend>
+						<article id="articulo">El siguiente formulario sirve para que usted forme parte de nuestro cat&aacute;logo de estilistas, requerir&aacute; informaci&oacute;n ver&iacute;dica ,la cual ser&aacute; almacenada en nuestra base de datos.</br> Con la informaci&oacute;n registrada podr&aacute; tener acceso a SisPaEst.
+						</article>
+				</fieldset>				
+				<div id="guardar">
+					<input type="submit" value="Guardar" id="guar"/>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

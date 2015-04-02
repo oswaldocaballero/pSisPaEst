@@ -1,0 +1,1104 @@
+body{
+/*background-image: url(../image/background.jpg);
+background-size: 100% 100%;
+background-attachment: fixed;*/
+	position: inherit;
+	text-align: center;
+    margin-bottom: 0%;
+    margin-top: -0.2%;
+    margin-right: 0%;
+    margin-left: -1.3%;
+    font-family: Arial,sans-serif;
+	font-size: 1.08em;
+}
+#logotipo{
+	width: 43.40%;
+	left: 1%;	
+}
+
+#logo{
+	height:250px; 
+	width:580px;
+}
+
+/*-------------------------------------------------------Menu para las paginas------------------------------------------------------------------------*/
+#mensajeSesion{
+	position: absolute;
+	top: 0%;
+	text-align: center;
+	background: red;
+	color: black;
+}
+
+ul{
+	cursor: pointer;
+}
+
+#menu{
+	position: relative;
+	z-index: 3;
+    margin-top: 0px;
+    padding-left: 0px; 				    
+}
+
+#menu li { 		
+	list-style:none; 
+ 	float: left;
+}
+
+#menu li a#indexuno ,a#indexdos, a#indextres, a#indexcuatro, a#indexseis,a#indexsiete{
+	background-color:transparent;
+	color:rgb(255,255,255);
+	text-decoration:none;
+	padding:18px 14px;
+	display:block;
+	border-right: 1px solid #FFFFFF;
+}
+
+#menu > li ul{						
+	display:none;
+	position:absolute;
+}
+
+#menu li ul.indexsub{
+	padding-left: 0px;
+	text-align: left; 
+}
+
+#menu li #menu2 a.submenu1, #menu2 a.submenu2{
+	background-color:transparent;
+	color:rgb(255,255,255);
+	text-decoration:none;
+	padding:8px 8px;
+	display:block;
+	border-right: 1px solid #FFFFFF;	
+}
+
+#menu li#menu2 a.submenu3{
+	background-color:transparent;
+	color:rgb(255,255,255);
+	text-decoration:none;
+	padding:8px 8px;
+	display:block;
+	border-right: 0px solid #FFFFFF;
+ }
+
+a#indexuno,a#indexdos,a#indextres,a#indexcuatro,a#indexseis{
+	text-align: center;
+}
+/*--------------- menu opcion inicio---------------------*/
+.indexinicio{
+	position:relative;
+	overflow:hidden;	
+    width: 75px;
+    height: 56px;
+    text-align: center;
+}
+li.indexinicio a#indexmenUno{
+	position: absolute;
+	text-align: center;
+	left: 0;
+	width: 75px;
+    height: 56px;
+}
+
+.indexinicio .indexinic{
+	width: 75px;
+    height: 56px;
+	position:absolute;
+	top:0;
+	left:0;
+	margin-top:-195px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.6);
+	-webkit-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	-moz-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+}
+
+.indexinicio:hover .indexinic {
+	margin-top:0;
+}
+
+.indexinic{
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+#indexhome{
+	padding-top:5px;
+	text-align: center;
+	width: 60px;
+    height: 48px;
+    cursor: pointer;
+}
+
+/*--------------- menu opcion registro----------------------*/
+.indexregistrar{
+    width: 115px;
+    height: 56px;
+}
+
+a#indexmenDos{
+	position: absolute;
+	text-align: center;
+	left: 0;
+	width: 115px;
+    height: 56px;
+}
+
+.indexregistrar:hover{
+	width: 115px;
+    height: 56px;
+	left:196;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.6);
+	-webkit-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	-moz-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+}
+
+.indexregi{
+	position: absolute;
+	top:0;
+	left:196;
+	width: 115px;
+    height: 56px;
+}
+
+/*--------------- menu opcion servicios-------------------*/
+.indexservicios{
+	text-align: center;
+	position:relative;
+	overflow:hidden;	
+    width: 110px;
+	height: 56px;
+}
+
+li.indexservicios a#indextres{
+	text-align: center;
+	position: absolute;
+    padding-left: 5px;
+    padding-right: 6px;
+    width: 98px;
+}
+
+a#indexmenTres{
+	position: absolute;
+	text-align: center;
+	left: 0;
+	width: 110px;
+    height: 56px;
+}
+
+.indexservicios .indexserv {
+    width: 110px;
+	height: 56px;
+	position:absolute;
+	top:0;
+	left:0;
+	margin-top:-195px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.6);
+	-webkit-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	-moz-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+}
+
+
+.indexservicios:hover .indexserv{
+	margin-top:0;
+}
+
+.indexserv{
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+#indexservice{
+	padding-top:5px;
+	text-align: center;
+	width: 50px;
+    height: 48px;
+    cursor: pointer;
+}
+
+/*--------------- menu opcion esteticas---------------*/
+.indexesteticas{
+	position: relative;
+	overflow:hidden;	
+    width: 115px;
+    height: 56px;	
+}
+
+a#indexmenCinco{
+	position: absolute;
+	left: 0;
+	width: 115px;
+    height: 56px;
+    text-align: center;
+}
+
+.indexesteticas .indexeste {
+	width: 115px;
+    height: 56px;
+	position:absolute;
+	top:0;
+	left:196;
+	margin-top:-195px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.6);
+	-webkit-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	-moz-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+}
+
+.indexesteticas:hover .indexeste {
+	margin-top:0;
+}
+
+.indexeste{
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+#indexesthetic{
+	padding-top:5px;
+	text-align: center;
+	left: 0px;
+	width: 68px;
+    height: 48px;
+    cursor: pointer;
+}
+
+/*--------------- menu opcion acerca de-----------------------*/
+.indexacerca{
+	position: relative;
+	overflow:hidden;	
+    width: 115px;
+    height: 56px;	
+}
+
+a#indexmenSeis{
+	position: absolute;
+	left: 0;
+	width: 115px;
+    height: 56px;
+    text-align: center;
+}
+
+.indexacerca .indexacer {
+	text-align: center;
+	width: 115px;
+    height: 56px;
+	position:absolute;
+	top: 0;
+	left:196;
+	margin-top:-195px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.6);
+	-webkit-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	-moz-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	-o-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+}
+
+.indexacerca:hover .indexacer {
+	margin-top:0;
+}
+
+.indexacer{
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+#indexabout{
+	padding-top:5px;
+	text-align: center;
+	left: 0px;
+	width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+/*--------------menu opcion ayuda-------------------*/
+.indexayuda{
+	position: relative;
+	overflow:hidden;	
+    width: 85px;
+    height: 56px;	
+}
+
+a#indexmenSiete{
+	position: absolute;
+	left: 0;
+	width: 85px;
+    height: 56px;
+    text-align: center;
+}
+
+.indexayuda .indexayud {
+	width: 85px;
+    height: 56px;
+	position:absolute;
+	top: 0;
+	left:196;
+	margin-top:-195px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.6);
+	-webkit-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	-moz-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	-o-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+	box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+}
+
+.indexayuda:hover .indexayud {
+	margin-top:0;
+}
+
+.indexayud {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+#indexhelp{
+	padding-top:5px;
+	text-align: center;
+	left: 0px;
+	width: 68px;
+    height: 48px;
+    cursor: pointer;
+}
+/*------------*/
+#menu li.indexregistrar ul.indexsub{
+	background-color: rgb(22,107,152);
+ 	border: 1px solid rgb(22,107,152);
+}
+
+#menu2{
+	list-style: none;
+	float: left;
+}
+
+/*----------------------------------------------------------barra de redes sociales-------------------------------------------------------------------*/
+div.sociales{
+	width: 166px;
+	height: 80px;
+	transition: height .4s;
+	-webkit-transition: height .4s;
+	-moz-transition: height .4s;
+	-o-transition: height .4s;
+	border-radius: 7px; 
+	-webkit-border-radius: 7px; 
+	-moz-border-radius: 7px; 
+	-o-border-radius: 7px; 
+}
+
+div#uno{
+	background-color: rgb(22,107,152);
+}
+
+div#dos{
+	background-color: rgb(240,80,20);	
+}
+
+div#tres{
+	background-color: rgb(255,0,0);
+}
+
+div#cuatro{
+	background-color: rgb(187,02,02);
+}
+
+div#cinco{
+	background-color: rgb(27,54,71);
+}
+
+img.icon{
+    border-width: 5px;
+	position: absolute;
+	background-color: rgba(255,255,255,.15);
+	display: block;
+	width: 40px;
+	padding: 20px;
+	border-radius: 50%;
+	border-radius: 50%;
+	-webkit-padding: 20px;
+	-webkit-border-radius: 50%;
+	-webkit-box-shadow:0px 0px 0px 30px rgba(255,255,255,0);
+	-webkit-transition:box-shadow .4s;	
+	-moz-border-radius: 50%;
+	-moz-box-shadow:0px 0px 0px 30px rgba(255,255,255,0);
+	-moz-transition:box-shadow .4s;
+	-moz-padding: 20px;
+	-o-border-radius: 50%;
+	-o-box-shadow:0px 0px 0px 30px rgba(255,255,255,0);
+	-o-transition:box-shadow .4s;
+	-o-padding: 20px;
+}
+
+p.texto{
+    margin-bottom: 32px;
+    margin-left: 86px;
+	margin-top: 32px;
+	position: absolute;
+	font-size: 1.08em;
+	color: white;
+	text-align: right;
+	opacity: 0.6;	
+	transition: padding-left .4s;
+	-webkit-transition: padding-left .4s;
+	-moz-transition: padding-left .4s;
+	-o-transition: padding-left .4s;
+	padding-top:-20px;
+	-webkit-padding-top:-20px;
+	-moz-padding-top:-20px;
+	-o-padding-top:-20px;
+}
+
+div.sociales:hover{
+	width: 185px;
+}
+
+div.sociales:hover p.texto{
+	padding-left: 18px;
+}
+
+div.sociales:hover img.icon{
+	box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+	-moz-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+	-o-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+}
+
+/*-----------------------------------------------------------------pagina inicio-------------------------------------------------------------------------*/
+#indexBienve{
+	position: absolute;
+	background-color: rgb(22,107,152);
+	width: 760px;
+	top: 50px;
+	left: 43.68%;
+	border-radius: 7px;
+	color: #FFFFFF;
+	height: 68px;
+}
+
+
+#conteneTabla{
+	width: 750px;
+	text-align: center;
+}
+
+/*------login----*/
+td.IniciarSesion{
+	cursor: pointer;
+	text-align: center;
+	width: 76px;
+	border-left: 2px solid rgb(255,255,255); 
+	border-radius: 7px;
+	height: 62px;
+}
+
+td.IniciarSesion:hover{
+	background: rgb(27,54,71);
+}
+
+a#sesion{
+	font-size: 1.08em;
+	text-decoration: none;
+	color: rgb(255,255,255);
+
+}
+div#loginSesion{
+	position: absolute;
+	display: none;
+	left: 600px;
+	top:52px;
+}
+
+#tabla{
+	position:absolute;
+	width: 670px;
+	border-color:transparent;
+}
+#usua,#contra{
+	font-size: 1.08em;
+	width: 120px;
+	color: #FFFFFF;
+	background-color: rgb(22,107,152);
+	border-radius: 4px;
+	cursor: default;
+	border-color: transparent;
+}
+
+#usuario,#contrasena{
+	border: none;
+	border: 2px solid;
+	border-radius: 4px;
+	color: rgb(22,107,152);
+}
+
+td{
+	border-color: transparent;
+	text-align:left;
+}
+
+#a_ingresar{
+	color: rgb(255,255,255);
+	border-radius:4px;
+	cursor: pointer;
+	font-size: 1.04em;
+	background: rgb(22,107,222);
+	
+	border-color:transparent;
+	border: 2px solid rgb(255,255,255);
+}
+
+#a_ingresar:hover{
+	color: rgb(22,107,152);
+	border-radius:4px;
+	cursor: pointer;
+	font-size: 1.04em;
+	background: rgb(255,255,255);
+	border-color:transparent;
+}
+
+div#btnIniciarSesion{
+	position: absolute;
+    top: 20px;
+    left: 520px;
+    display: none;
+	border-color:rgb(255,255,255);
+}
+
+.errores{
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.3);
+	-o-box-shadow:0 0 10px rgba(0,0,0,0.3);
+	box-shadow:0 0 10px rgba(0,0,0,0.3);
+	background:red;
+	color: rgb(255,255,255);
+	display: none;
+	font-size: .8em;
+	padding: 4px;
+}
+
+#mensajeLogin1{
+	position: absolute;
+	left: 310px;
+	width: 197px;
+	top: 7px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+#mensajeLogin2{
+	position: absolute;
+	left: 310px;
+	width: 148px;
+	top: 36px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+/*------continuacion pagina inicio------*/
+#indexOpciones{
+	position: absolute;
+	background-color: rgb(22,107,152);
+	color: rgb(255,255,255);
+	width: 615px;
+	height: 55px;
+	top: 130px;
+	left: 54.3%;
+	border-radius: 7px;
+}
+
+#indexSociales{
+	position:absolute;
+    top: 245px;
+    left:0.7%;    
+    border-radius:7px;
+    height: 380px;
+}
+
+#indexNoticias{
+	position:absolute;
+	background-color:rgb(22,107,152);
+	color:#FFFFFF;
+	width: 200px;
+	top: 38%;
+	left: 16%;
+	border-radius: 7px;
+	padding-top:8px;
+	height: 360px;
+}
+
+#noti{
+	width: 194px;
+	text-align: center;
+}
+
+#contNoti{
+	position: absolute;
+	background-color:#FFFFFF;
+	color: rgb(22,107,152);
+	border-radius: 7px;
+	border-color: rgb(22,107,152);
+	
+	width: 194px;
+	height: 330px;
+}
+
+#indexPromociones{
+	position:absolute;
+	background-color: rgb(22,107,152);
+	color:#FFFFFF;
+	width: 200px;
+	top: 35%;
+	left: 85%;
+	border-radius: 7px;
+	padding-top:8px;
+	height: 380px;
+}
+
+#promo{
+	width: 194px;
+	text-align: center;
+}
+
+#contPromo{
+	position: absolute;
+	background-color:#FFFFFF;
+	color: rgb(22,107,152);
+	border-radius: 7px;
+	border-color: #FFFFFF;
+	width: 194px;
+	height: 350px;
+}
+
+#indexNota{
+	position: absolute;
+	background-color: rgb(22,107,152);
+	width: 760px;
+	top: 638px;
+	left: 30%;
+	border-radius: 7px;
+	color: #FFFFFF;
+}
+
+#contNot{
+	width: 750px;
+	text-align: center;
+}
+/*------------------------------------------------------------formulario para el registro usuarios-----------------------------------------------------*/
+div#formulario{
+	position: absolute;
+	left: 20%;
+	width: 70%;
+	height: 50%;
+}
+
+fieldset#personales{
+	border-radius: 7px;
+	color: rgb(22,107,152);
+	border: 2px solid rgb(22,107,152);
+	margin-top: -12px;
+	height: 140px;
+}
+
+fieldset#direccion{
+	border-radius: 7px;
+	color: rgb(22,107,152);
+	border: 2px solid rgb(22,107,152);
+	margin-top: 1.2%;
+	height: 140px;
+	width: 50%;
+}
+fieldset#info{
+	position: absolute;
+	border-radius: 7px;
+	color: rgb(22,107,152);
+	border: 2px solid rgb(22,107,152);
+	top:160px;
+	left: 535px;
+	width: 40%;
+	height: 140px;
+}
+
+article#articulo{
+	text-align: justify;
+}
+
+div#guardar{
+	top: 354px;
+	position: absolute;
+    width: 80px;
+    height: 26px;
+	left: 820px;	
+}
+
+input#guar{
+	position: relative;
+	width: 82px;
+	height: 26px;
+	top: -1px;
+	left: -1px;
+	background: rgb(22,107,152);
+	border-radius: 3px;
+	border: 3px solid rgb(22,107,152);
+	color: rgba(255,255,255,.8); 
+	text-shadow:5px 5px 2px #000;
+	-webkit-transition:.9s;
+	-moz-transition:.9s;
+	-o-transition:.9s;
+}
+
+input#guar:hover{
+	width: 82px;
+	height: 26px;
+	top: -1px;
+	left: -1px;
+	border-radius: 3px;
+	border: 3px solid rgb(255,255,255);
+	background: rgb(202,17,15);
+	color: rgb(255,255,255); 
+	-webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+	-o-transform: rotate(-8deg);
+	box-shadow: 3px 3px 5px rgb(0,0,0);
+	-webkit-box-shadow: 3px 3px 5px rgb(0,0,0);
+	-moz-box-shadow: 3px 3px 5px rgb(0,0,0);
+	-o-box-shadow: 3px 3px 5px rgb(0,0,0);
+}
+
+/*datos personales -----------*/
+a#user{
+	position: absolute;
+	margin-top: 0px;
+	top: 16px;
+	left: 31px;
+}
+
+#tUser{
+	color: rgb(22,107,152);
+	position: absolute;
+	top: 0px;
+	margin-left: -70px;
+	left: 206px;
+}
+
+a#nombre{
+	position: absolute;
+	margin-top: 30px;
+	left: 31px;
+}
+
+#tNombre{
+	color: rgb(22,107,152);
+	position: absolute;
+	top: 0px;
+	margin-left: -70px;
+	left: 207px;	
+}
+
+a#ap{
+	position: absolute;
+	margin-top: 65px;
+	left: 31px;
+}
+
+#tAp{
+	color: rgb(22,107,152);
+	position: absolute;
+	top: 0px;
+	left: 137px;	
+}
+
+a#am{
+	position: absolute;
+	margin-top: 100px;
+	left: 31px;
+}
+
+#tAm{
+	color: rgb(22,107,152);
+	position: absolute;
+	top: 0px;
+	left: 137px;	
+}
+
+a#pass{
+	position: absolute;
+	margin-top: -4px;
+	left: 547px;
+}
+
+#tPass{
+	color: rgb(22,107,152);
+	position: absolute;
+	top: 0px;
+	left: 100px;	
+}
+
+a#telf{
+	position: absolute;
+	margin-top: 25px;
+	left: 547px;
+}
+
+#tTelf{
+	color: rgb(22,107,152);	
+	position: absolute;
+	top: 0px;
+	left: 100px;	
+}
+
+a#e_mail{
+	position: absolute;
+	margin-top: 54px;
+	margin-left: 0px;
+	left: 547px;
+}
+
+#tEmail{
+	color: rgb(22,107,152);	
+	position: absolute;
+	top: 0px;
+	left: 100px;	
+}
+
+a#sx{
+	position: absolute;
+	margin-top: 110px;
+	margin-left: 100px;
+	left: 445px;
+}
+
+#hmb{
+	color: rgb(22,107,152);	
+	position: absolute;
+	margin-top: 110px;
+	left: 640px;	
+}
+
+#mjr{
+	color: rgb(22,107,152);
+	position: absolute;
+	margin-top: 110px;
+	left: 750px;	
+}
+
+a#edad{
+	position: absolute;
+	margin-top: 85px;
+	left: 547px;
+}
+
+#tEdad{
+	font-family: Arial,sans-serif;
+	font-size: .9em;
+	color: rgb(22,107,152);
+	position: absolute;
+	top: 0px;
+	left: 103px;	
+}
+
+/*domicilio-----------*/
+a#direccion{
+	position: absolute;
+	margin-top: 0px;
+	left: 31px;
+}
+
+#tDireccion{
+	color: rgb(22,107,152);	
+	position: absolute;
+	top: 0px;
+	margin-left: -70px;
+	left: 206px;
+	width: 370%;
+}
+
+a#colonia{
+	position: absolute;
+	margin-top: 50px;
+	left: 31px;
+}
+
+#tColonia{
+	color: rgb(22,107,152);
+	position: absolute;
+	top: 2px;
+	margin-left: -70px;
+	left: 206px;	
+}
+
+/*--------------------errores para el formulario-----------------*/
+#mensaje1{
+	position: absolute;
+	margin-top: 0px;
+	top: 16px;
+	left: 350px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+#mensaje2{
+	position: absolute;
+	margin-top: 0px;
+	top: 43px;
+	left: 350px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+#mensaje3{
+	position: absolute;
+	margin-top: 0px;
+	top: 78px;
+	left: 350px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+#mensaje4{
+	position: absolute;
+	margin-top: 0px;
+	top: 113px;
+	left: 350px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+#mensaje5{
+	position: absolute;
+	margin-top: 0px;
+	top: 0px;
+	left: 830px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+#mensaje6{
+	position: absolute;
+	margin-top: 0px;
+	top: 40px;
+	left: 830px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+#mensaje7{
+	position: absolute;
+	margin-top: 0px;
+	top: 67px;
+	left: 830px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+#mensaje8{
+	position: absolute;
+	margin-top: 0px;
+	top: 67px;
+	left: 830px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+#mensaje11{
+	position: absolute;
+	margin-top: 0px;
+	top: 212px;
+	left: 175px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+#mensaje12{
+	position: absolute;
+	margin-top: 0px;
+	left: 170px;
+	top: 265px;
+	background: rgb(187,02,02);
+	border-radius:2px;
+}
+
+.errores{
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.3);
+	-o-box-shadow:0 0 10px rgba(0,0,0,0.3);
+	box-shadow:0 0 10px rgba(0,0,0,0.3);
+	background:red;
+	color: rgb(255,255,255);
+	display: none;
+	font-size: .8em;
+	padding: 4px;
+}
+
+/*--------------------------------------------------------------------slider----------------------------------------------------------------------------------*/
+#contenedor{
+	width: 480px;
+	padding: 20px;
+	height: 380px;
+	margin: auto;
+	background-color: transparent;
+	position: absolute;
+	left: 530px;
+	top: 220px;
+}
+
+#slider{
+	z-index: 1;
+	position: relative;
+	width: 450px;
+	height: 350px;
+	padding: 10px;
+	margin: 0 auto;
+	border:1px solid rgb(22,107,152);
+}
+
+#slider > div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#slider img{
+	width: 100%;
+	height: 100%;
+}
+/*--------------------------------slider noticias---------------------------------*/
+#sliderNoti{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 191px;
+	height: 327px;
+	border-radius: 7px;
+}
+
+#imagenNoti{
+	width: 196px;
+	height: 332px;
+	border-radius: 7px;
+}
+
+#contendorImagenesNoti{
+	width: 196px;
+	height: 332px;
+	border-radius: 7px;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 80%){
+	div.indexPromociones{
+		top: 80%;
+		width: 10%;
+	}
+
+}

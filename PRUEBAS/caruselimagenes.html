@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js"></script>
+<script src="jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var largura,altura,tamano,distancia;
+		largura = $(window).width();
+		altura = $(window).height();
+		$('#galeria').css({height:altura+'px'});
+		tamano=$('.mini').width();
+		distancia = tamano - largura;
+		$('.mini').mousemove(function(mouse){
+			//if(mouse.pageX < distancia+20) {
+				$(this).css({left:-mouse.pageX});
+			//}
+		});
+		/*$('.mini img').click(function(){
+			var img = $(this).attr('src');
+			$('.amplia img').attr('src',img);
+		});*/
+
+	});
+</script>
+<style type="text/css"> 
+*{
+	margin: 0px;
+	padding:0px;
+}
+body{
+	width: 1500px;
+	overflow: hidden;
+}
+#galeria{
+	width: 90%;
+	position: relative;
+}
+.amplia{
+	width: inherit;
+	height: inherit;
+}
+.amplia img{
+	width: inherit;
+	height: inherit;
+}
+.mini{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	padding: 10px;
+}
+.mini img{
+	width: 170px;
+	height: 140px;
+	margin:0 20px;
+	float: left;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+	</div id="galeria">
+		<div class="amplia">
+			<img src="../image/promociones/p1_big.jpg">
+			<img src="../image/promociones/p2_big.jpg">
+			<img src="../image/promociones/p3_big.jpg">
+			<img src="../image/promociones/p4_big.jpg">
+		</div>
+		<div class="mini">
+			<img src="../image/promociones/p1.jpg">
+			<img src="../image/promociones/p2.jpg">
+			<img src="../image/promociones/p3.jpg">
+			<img src="../image/promociones/p4.jpg">
+			<img src="../image/promociones/p1.jpg">
+			<img src="../image/promociones/p1.jpg">
+			<img src="../image/promociones/p2.jpg">
+			<img src="../image/promociones/p3.jpg">
+			<img src="../image/promociones/p4.jpg">
+			<img src="../image/promociones/p4.jpg">
+		</div>
+	</div>
+</body>
+</html>

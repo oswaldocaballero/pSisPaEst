@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Login Cliente</title>
+		<link rel="Stylesheet" href="../css/Style.css" type="text/css" />
+		<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="../js/btnOcultos.js"></script>
+		<script type="text/javascript" src="../js/validaciones.js"></script>
+	</head>
+			<body>
+				<!--<img src="image/fw.jpg" id="fondo"/>-->	
+				<img src="../image/log.gif" alt="sispaest" height="250" width="610" />
+				<!--fieldset se utiliza para agrupar elementos-->
+				<fieldset align="center" id="field">
+					<!--legend sirve para ponerle el nombre al fieldset-->
+					<legend>Login</legend>
+						
+						<table border="2" align="center" id="tabla">
+						<form action="../php/verificarClienteLogin.php" method="post">
+								<tr>
+									<th id="sis" colspan="2">sispaest</th>
+								</tr>
+								<tr class="user">
+									<td id="usua">Usuario</td>
+									<td><input id="usuario" name="usuario" type="text" value="" title="Ingrese su usuario" onpaste="return false"/></td>
+									<div id="mensajeLogin1" class="errores">Ingrese su nombre de usuario</div>
+								</tr>
+								<tr class="pass">
+									<td id="contra">Contrase&ntilde;a</td>
+									<td><input id="contrasena" name="contrasena" type="password" value="" title="Ingrese su contraseña" onpaste="return false"/></td>
+									<div id="mensajeLogin2" class="errores">Ingrese su contrase&ntilde;a</div>
+								</tr>
+								<tr>
+									<td  colspan="2"><input id="a_ingresar" type="submit" value="Iniciar sesion"/></td>
+								</tr>					
+						</form>
+						</table>
+						
+						<table border="0" align="center" id="mas">
+								<tr id="tabla2">
+									<td class="borrar" align="center"><input id="a_borrar" type="reset" value="¿Olvido su contrase&ntilde;a?"/></td>
+									<div class="reg" align="center"><input id="a_registrar" type="submit" value="Registrarse" onclick="visualizarBtn();"/></div>
+								</tr>
+						</table>
+						<table id="tabla3">
+							<tr>
+								<td><a href="../index.html"><img src="../image/invitado.jpg" id="imgInvit"/></a></td>
+							</tr>
+						</table>
+						<div id="subBotRegistro">
+								<div id="rC"><a href="registroCliente.html"><input id="r" type="submit" value="Registro Cliente"/></a></div>
+								<div id="rA"><a href="registroAdministrador.html"><input id="r" type="submit" value="Registro Administrador"/></a></div>
+								<div id="rE"><a href="registroEstilista.html"><input id="r" type="submit" value="Registro Estilista"/></a></div>
+						</div>
+				</fieldset>
+			</body>
+</html>

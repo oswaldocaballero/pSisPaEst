@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Iniciog</title>
+		<!--importacion de librerias css-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<link rel="Stylesheet" href="css/indexStyle.css"/>
+		<!--importacion de librerias js-->
+		<script text="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/scripCarrusel.js"></script>
+		<script type="text/javascript" src="js/btnOcultos.js"></script>
+		<script type="text/javascript" src="js/validaciones.js"></script>
+	</head>
+
+	<body>
+		<div id="logotipo">
+			<img src="image/log.gif" alt="sispaest" id="logo" />
+		</div>		
+		<div id="indexBienve">
+			<table>
+				<tr>
+					<td id="conteneTabla"><a id="saludo"><h3>BIENVENIDO AL SISTEMA PARA ESTETICAS </h3></a></td>
+					<td class="IniciarSesion" onclick="login();"><a id="sesion" >Login</a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="loginSesion">
+			<form action="php/verificarUsuarioLogin.php" method="post">
+				<table border="2" id="tabla">
+					<tr class="user">
+						<td id="usua">Usuario *</td>
+						<td><input id="usuario" name="usuario" type="text" title="Ingrese su usuario"/></td>
+					</tr>
+						<div id="mensajeLogin1" class="errores">Ingrese su nombre de usuario</div>
+
+					<tr class="pass">
+						<td id="contra">Contrase&ntilde;a *</td>
+						<td><input id="contrasena" name="contrasena" type="password" title="Ingrese su contraseña"/></td>
+						<div id="mensajeLogin2" class="errores">Ingrese su contrase&ntilde;a</div>
+					</tr>			
+				</table>
+				<div id="btnIniciarSesion"><input id="a_ingresar" type="submit" value="Iniciar sesi&oacute;n"/></div>
+			</form>
+		</div>	
+
+		<div id="indexOpciones">
+			<ul id="menu">
+				<li class="inicio"><a id="uno" >Inicio</a>
+					<div class="inic"><a href="index.html"><img id="home" src="image/iconos/home.ico"></a></div>
+				</li>
+				<li class="registrar"><a id="dos">Registrar</a>
+					<div class="regi"></div>
+					<ul class="sub">
+						<li id="menu2"><a class="submenu1" href="html/registroCliente.html">Cliente</a></li>
+						<li id="menu2"><a class="submenu2" href="html/registroEstilista.html">Estilista</a></li>
+						<li id="menu2"><a class="submenu3" href="html/registroAdministrador.html">Administrador</a></li>
+					</ul>
+				</li>
+				<li class="servicios"><a id="tres">Servicios</a>
+					<div class="serv"><a id="menTres" href="html/servicios.html"><img id="service" src="image/iconos/shopping_cart.ico"/></a></div>
+				</li>
+				<li class="esteticas"><a id="cuatro">Esteticas</a>
+					<div class="este"><a id="menCuatro" href="html/esteticas.html"><img id="esthetic" src="image/iconos/esteticas.png"/></a></div>
+				</li>
+				<li class="acerca"><a id="seis">Acerca de</a>
+					<div class="acer"><a id="menSeis" href=""><img id="about" src="image/iconos/comments.ico"/></a></div>
+				</li>
+
+				<li class="ayuda"><a id="siete">Ayuda</a>
+					<div class="ayud"><a id="menSiete" href="html/ayuda.html"><img id="help" src="image/iconos/question_mark.ico"/></a></div>					
+				</li>
+			</ul>
+		</div>
+		
+		<!-- <div id="contenedor">
+			<div id="slider">
+				<div><img src="image/1.jpg"></div>
+				<div><img src="image/2.jpg"></div>
+				<div><img src="image/3.jpg"></div>
+				<div><img src="image/4.jpg"></div>
+				<div><img src="image/5.jpg"></div>
+				<div><img src="image/6.jpg"></div>
+				<div><img src="image/7.jpg"></div>
+			</div>
+		</div> -->
+
+		<div id="indexSociales">
+			<div class="sociales" id="uno"><img class="icon" src="image/64x64/twitter.png"><p class="texto">twitter</p></div>
+			<div class="sociales" id="dos"><img class="icon" src="image/64x64/furl.png"><p class="texto">furl</p></div>
+			<div class="sociales" id="tres"><img class="icon" src="image/64x64/youtube.png"><p class="texto">youtube</p></div>
+			<div class="sociales" id="cuatro"><img class="icon" src="image/64x64/yahoo.png"><p class="texto">yahoo</p></div>
+			<div class="sociales" id="cinco"><img class="icon" src="image/64x64/facebook.png"><p class="texto">facebook</p></div>
+		</div>
+
+		<div id="indexNoticias">
+			<table>
+				<tr>
+					<td id="noti">Noticias</td>
+				</tr>
+				<tr>
+					<td id="contNoti"></td>
+                 </tr>
+			</table>	
+		</div>
+		
+		<div id="indexPromociones">
+			<table>
+				<tr>
+					<td id="promo">Promociones</td>
+				</tr>
+				<tr>
+					<td id="contPromo"></td>
+                </tr>
+			</table>			
+		</div>
+		
+		<div id="indexNota">
+			<table>
+				<tr>
+					<td id="contNot">&copy;&nbsp; 2014 Derechos Reservados SisPaEst </td>
+				</tr>		
+			</table>
+		</div>
+
+	</body>
+</html>

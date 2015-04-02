@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider 2</title>
+	<script text="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script text="text/javascript" src="../js/jquery_cycle.js"></script>
+	<script type="text/javascript">
+	$('#contendorImagenes').cycle({
+	fx:    'scrollUp', 
+    sync:  false, 
+    delay: -2000 
+	});
+	</script>
+	<style type="text/css">
+
+		#sliderNoti{
+			position: absolute;
+			top: 20%;
+			left: 60%;
+			height: 230px;
+			border: 3px solid rgb(0,0,0);
+		}
+		
+		#imagen{
+			width: 230px;
+			height: 210px;
+		}
+		
+		#contendorImagenesNoti{
+			height: 210px;
+			width: 230px;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+<div id="sliderNoti">
+	<div id="contendorImagenesNoti">
+		<img src="../image/promociones/noti1.jpg" id="imagenNoti">
+		<img src="../image/promociones/noti2.jpg" id="imagenNoti">
+		<img src="../image/promociones/noti3.jpg" id="imagenNoti">
+		<img src="../image/promociones/noti4.jpg" id="imagenNoti">
+		<img src="../image/promociones/noti5.jpg" id="imagenNoti">
+		<img src="../image/promociones/noti6.jpg" id="imagenNoti">
+		<img src="../image/promociones/noti7.jpg" id="imagenNoti">
+	</div>
+</div>
+</body>
+</html>

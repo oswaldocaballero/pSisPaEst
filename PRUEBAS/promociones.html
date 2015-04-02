@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>Galeria imagenes</title>
+		<script text="text/javascript" src="../js/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/promoStyle.css">
+		<script type="text/javascript">
+						$(document).ready(function(){
+			var largo, alto, tamaño,distancia;
+				largo = $(window).width();
+				alto = $(window).height();
+				$('#galeria').css({height:alto+'px'});
+				tamaño=$('.reducida').width();
+				distancia = tamaño-largo;
+
+				$('.reducida').mousemove(function(mouse){
+					$(this).css({left:-mouse.pageX});
+				});
+			$('.reducida img#mini').click(function(){
+				var img =$(this).attr('src');
+				$('.amplia img#picture').attr('src',img);
+			});
+		});
+		</script>
+	</head>
+	<body><div id="galeria">
+						<div class="amplia">
+							<img src="../image/promociones/p1.jpg" id="picture">
+							<!--<img src="../image/promociones/p2.jpg">
+							<img src="../image/promociones/p3.jpg">
+							<img src="../image/promociones/p4.jpg">
+							<img src="../image/promociones/p5.jpg">
+							<img src="../image/promociones/p6.jpg">-->
+						</div>
+						<div class="reducida">
+							<img src="../image/promociones/p1.jpg" id="mini">
+							<img src="../image/promociones/p2.jpg" id="mini">
+							<img src="../image/promociones/p3.jpg" id="mini">
+							<img src="../image/promociones/p4.jpg" id="mini">
+							<img src="../image/promociones/p5.jpg" id="mini">
+							<img src="../image/promociones/p6.jpg" id="mini">
+						</div>
+					</div>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+#Acordion {
+	position: relative;
+	margin-right: 63%;
+	width:50%;
+ }
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-accordion .ui-accordion-header {
+	display: block;
+	border-radius: 3px;
+	cursor: pointer;
+	position: relative;
+	margin-top: 0px;
+	padding: .5em .5em .5em .7em;
+}
+.ui-accordion .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-noicons {
+	padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+/* Componente del contenedor
+----------------------------------*/
+.ui-widget {
+	font-family: Arial,sans-serif;
+	font-size: 1.08em;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #eeeeee;
+	background: #ffffff  50% 50% ;
+	color: #333333;
+}
+
+
+/* Interaction de estados
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #d8dcdf;
+	background: rgb(22,107,152) 50% 50% ;
+	color: #004276;
+}
+/*color para ponerle a las letras del titulo del acordion*/
+.ui-state-default a#acor,
+.ui-state-default a#acor:link,
+.ui-state-default a#acor:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #cdd5da;
+	background: #f6f6f6 50% 50%;
+	font-weight: bold;
+	color: #111111;
+}
+.ui-state-hover a#acor,
+.ui-state-hover a#acor:visited,
+.ui-state-focus a#acor,
+.ui-state-focus a#acor:visited {
+	color: #111111;
+	text-decoration: none;
+}
+
+.ui-state-active a#acor:visited {
+	color: rgb(245,245,245);
+	text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #eeeeee;
+	background: #ffffff 50% 50%;
+	font-weight: bold;
+	text-shadow:1px 2px 2px #000;
+}
