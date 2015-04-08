@@ -96,9 +96,9 @@
                     <?php
                      if(isset($_SESSION['mensaje'])){
                      	
-   ?>
+   		    ?>
                        <div id="respuesta"><a>Los datos del usuario han sido registrados</a></div>
-   <?php
+   		    <?php
                      	
                      }
                     ?>
